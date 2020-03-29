@@ -6,6 +6,11 @@
 
 <h2 align="center">A collection of ML tools written with professor's chalk</h2>
 
+<p align="center">
+    <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black"></a>
+    <a href="https://github.com/pre-commit/pre-commit"><img src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white" alt="pre-commit" style="max-width:100%;"></a>
+</p>
+
 <!-- prettier-ignore -->
 > _Application of these estimators is left as an exercise for the reader_ - Professor Estimium
 
