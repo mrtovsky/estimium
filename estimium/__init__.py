@@ -8,4 +8,4 @@ boilerplates with a simple API and universal implementation.
 """
 
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
