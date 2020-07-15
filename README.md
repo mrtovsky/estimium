@@ -1,7 +1,7 @@
 <h1 align="center">Professor Estimium</h1>
 
 <p align="center">
-    <img src="./docs/images/professor-estimium.png" alt="Professor Estimium" class="center">
+    <img src="https://raw.githubusercontent.com/mrtovsky/estimium/master/docs/images/professor-estimium.png" alt="Professor Estimium" class="center">
 </p>
 
 <h2 align="center">A collection of ML tools written with professor's chalk</h2>
