@@ -56,8 +56,51 @@ Every branch has a dedicated role and its name coupled with _grouping token_
 prefix self-defines it.
 
 The project development flow between branches is unchanged compared to the
-solution proposed above by Vincent Driessen, only the more detailed roles of
-individual branches are highlighted, that will be described below.
+solution proposed above by Vincent Driessen. When the release/hotfix/feature is
+finished, the changes should be merged back into the correct branch using the
+following command:
+
+```bash
+git checkout <target-branch>
+git merge --no-ff <current-branch>
+```
+
+To properly reflect the repository topology the `--no-ff` flag is necessary.
+For a more detailed explanation we are referring to
+[Stack Overflow](https://stackoverflow.com/questions/9069061/what-is-the-difference-between-git-merge-and-git-merge-no-ff).
+
+When merging was successful there is no need to keep unnecessary branches. They
+can be easily deleted by calling:
+
+```bash
+git branch -d <current-branch>
+git push origin :<current-branch>
+```
+
+In exceptional circumstances, it may happen that we may want to archive some
+branches before deleting them. Those branches will be tagged with the
+`archive/` prefix. We do it as follows:
+
+```bash
+git tag archive/<current-branch> <current-branch>
+git branch -d <current-branch>
+git push origin :<current-branch>
+git push --tags
+```
+
+Restoring them in the future is just a matter of executing the following
+command:
+
+```bash
+git checkout -b <current-branch> archive/<current-branch>
+```
+
+A more extensive post on this topic can be found on
+[Aaron West's blog](http://www.aaronwest.net/blog/index.cfm/2011/6/7/Git-Workflows-Archiving-Old-Branches).
+
+The only guideline where we deviate slightly from Vincent Driessen's model is
+to highlight more detailed roles of individual branches, that will be described
+below.
 
 ### Grouping Tokens
 
