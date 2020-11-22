@@ -7,9 +7,11 @@
 <h2 align="center">A collection of ML tools written with professor's chalk</h2>
 
 <p align="center">
+    <a href="https://www.python.org"><img src="https://img.shields.io/badge/python-3.7%20%7C%203.8%20%7C%203.9-blue" alt="Python"></a>
     <a href="https://github.com/psf/black"><img src="https://img.shields.io/badge/code%20style-black-000000.svg" alt="Code style: black"></a>
     <a href="https://github.com/pre-commit/pre-commit"><img src="https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white" alt="pre-commit" style="max-width:100%;"></a>
-    <a href="https://codecov.io/gh/mrtovsky/estimium/branch/master"><img src="https://codecov.io/gh/mrtovsky/estimium/branch/master/graph/badge.svg" alt="Code style: black"></a>
+    <a href="https://codecov.io/gh/mrtovsky/estimium/branch/master"><img src="https://codecov.io/gh/mrtovsky/estimium/branch/master/graph/badge.svg" alt="Codecov"></a>
+    <a href="https://gitmoji.carloscuesta.me"><img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji"></a>
 </p>
 
 <!-- prettier-ignore -->
